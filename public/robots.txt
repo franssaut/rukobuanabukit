@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://rukobuanaview.web.id/sitemap.xml
+Sitemap: https://www.rukobuanaview.web.id/sitemap.xml
