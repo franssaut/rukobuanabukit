@@ -12,6 +12,7 @@ export default function Header({ onOpenBrochure }) {
 
       const sections = [
         'kontak',
+        'faq',
         'simulasi-promo',
         'spesifikasi',
         'denah-dan-tipe',
@@ -39,6 +40,7 @@ export default function Header({ onOpenBrochure }) {
     { id: 'denah-dan-tipe', label: 'Denah & Tipe', href: '#denah-dan-tipe' },
     { id: 'spesifikasi', label: 'Spesifikasi', href: '#spesifikasi' },
     { id: 'simulasi-promo', label: 'Simulasi Promo', href: '#simulasi-promo' },
+    { id: 'faq', label: 'FAQ', href: '#faq' },
     { id: 'kontak', label: 'Kontak', href: '#kontak' }
   ];
 

@@ -1,0 +1,6 @@
+# Robots.txt for Ruko Buana View
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rukobuanaview.web.id/sitemap.xml

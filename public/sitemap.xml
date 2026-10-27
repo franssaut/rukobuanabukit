@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://rukobuanaview.web.id/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rukobuanaview.web.id/assets/hero-facade.png</image:loc>
+      <image:title>Fasad Modern 2 Lantai Ruko Buana View Batu Aji Batam</image:title>
+      <image:caption>Perspektif fasad ruko komersial 2 lantai modern oleh PT Buana Cipta Propertindo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rukobuanaview.web.id/assets/location-map.png</image:loc>
+      <image:title>Peta Lokasi dan Aksesibilitas Ruko Buana View Batu Aji</image:title>
+      <image:caption>Peta lokasi strategis ruko di kawasan padat penduduk Batu Aji Batam</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rukobuanaview.web.id/assets/floorplan.png</image:loc>
+      <image:title>Denah Arsitektur Lantai 1 dan 2 Ruko Buana View</image:title>
+      <image:caption>Denah tata ruang 4m x 17.5m 2 lantai ruko komersial</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rukobuanaview.web.id/assets/brochure-main.png</image:loc>
+      <image:title>Brosur Resmi Ruko Buana View Cipta Group</image:title>
+      <image:caption>Brosur penawaran promo Cash Bertahap 60x dan Diskon 30 Juta</image:caption>
+    </image:image>
+  </url>
+</urlset>

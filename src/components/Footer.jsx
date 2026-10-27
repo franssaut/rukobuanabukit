@@ -70,6 +70,11 @@ export default function Footer({ onOpenBrochure }) {
                 </a>
               </li>
               <li>
+                <a href="#faq" className="hover:text-primary-fixed transition-colors">
+                  Pertanyaan Umum (FAQ)
+                </a>
+              </li>
+              <li>
                 <a href="#kontak" className="hover:text-primary-fixed transition-colors">
                   Hubungi Sales Gallery
                 </a>

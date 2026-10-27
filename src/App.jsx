@@ -8,6 +8,7 @@ import FloorplanSection from './components/FloorplanSection';
 import SpecsSection from './components/SpecsSection';
 import FinancingCalculator from './components/FinancingCalculator';
 import DeveloperSection from './components/DeveloperSection';
+import FaqSection from './components/FaqSection';
 import FloatingCTA from './components/FloatingCTA';
 import Footer from './components/Footer';
 import LightboxModal from './components/LightboxModal';
@@ -73,7 +74,10 @@ export default function App() {
         {/* 6. Payment Schemes & Interactive Mortgage / Installment Calculator */}
         <FinancingCalculator />
 
-        {/* 7. Developer Bio & Executive Consultant Frans Rumah Batam */}
+        {/* 7. Frequently Asked Questions (FAQ) - SEO Rich Content */}
+        <FaqSection />
+
+        {/* 8. Developer Bio & Executive Consultant Frans Rumah Batam */}
         <DeveloperSection />
       </main>
 
