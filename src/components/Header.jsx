@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PROPERTY_INFO, getWhatsAppUrl } from '../data/propertyData';
+import PromoBanner from './PromoBanner';
 
 export default function Header({ onOpenBrochure }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,10 +47,10 @@ export default function Header({ onOpenBrochure }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-surface/95 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] py-1.5'
-          : 'bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-2'
+          ? 'bg-surface/95 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.06)]'
+          : 'bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]'
       }`}
     >
       <div className="h-16 lg:h-20 max-w-[1240px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-space-md">
@@ -148,6 +149,9 @@ export default function Header({ onOpenBrochure }) {
           </button>
         </div>
       </div>
+
+      {/* Shimmer Announcement Ribbon Promo Perdana (Integrated & Never Covered) */}
+      <PromoBanner onOpenBrochure={onOpenBrochure} />
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (

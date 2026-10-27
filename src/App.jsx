@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import PromoBanner from './components/PromoBanner';
 import HeroSection from './components/HeroSection';
 import MetricsSection from './components/MetricsSection';
 import LocationSection from './components/LocationSection';
@@ -45,14 +44,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-surface flex flex-col selection:bg-primary-container selection:text-on-primary">
-      {/* Top Fixed Header & Nav */}
+      {/* Top Sticky Header & Nav with Integrated Promo Banner */}
       <Header onOpenBrochure={handleOpenBrochure} />
 
       {/* Main Content Area */}
-      <main className="w-full pt-16 lg:pt-20 bg-surface flex-grow">
-        {/* Shimmer Announcement Ribbon */}
-        <PromoBanner onOpenBrochure={handleOpenBrochure} />
-
+      <main className="w-full bg-surface flex-grow">
         {/* 1. Hero Showcase Bento */}
         <HeroSection onOpenLightbox={handleOpenLightbox} />
 
