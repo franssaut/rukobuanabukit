@@ -75,8 +75,12 @@ export default function FloorplanSection({ onOpenLightbox, onOpenBrochure }) {
                 className="bg-surface p-space-md rounded-xl shadow-inner flex items-center justify-center group overflow-hidden cursor-pointer relative border border-outline-variant/20"
               >
                 <img
-                  src="/assets/floorplan.png"
+                  src="/assets/floorplan.webp"
                   alt="Denah Arsitektur Lantai 1 dan Lantai 2 Ruko Buana View"
+                  width="1132"
+                  height="1600"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto max-h-[580px] object-contain rounded-lg transition-transform duration-700 group-hover:scale-105"
                 />
 

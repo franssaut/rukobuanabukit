@@ -13,7 +13,7 @@ export default function DeveloperSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const msg = `Halo Frans, saya ${formData.name} (${formData.phone}). Saya tertarik dengan Ruko Buana View skema ${formData.unitInterest}. Catatan: ${formData.notes || 'Mohon info ketersediaan unit dan jadwal survei.'}`;
-    window.open(getWhatsAppUrl(msg), '_blank');
+    window.open(getWhatsAppUrl(msg), '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -69,16 +69,24 @@ export default function DeveloperSection() {
               <form onSubmit={handleSubmit} className="space-y-2.5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   <input
+                    id="inquiry-name"
+                    name="name"
                     type="text"
                     required
+                    autoComplete="name"
+                    aria-label="Nama Lengkap"
                     placeholder="Nama Lengkap *"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-3 py-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <input
+                    id="inquiry-phone"
+                    name="phone"
                     type="tel"
                     required
+                    autoComplete="tel"
+                    aria-label="Nomor WhatsApp"
                     placeholder="Nomor WhatsApp *"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -88,6 +96,9 @@ export default function DeveloperSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   <select
+                    id="inquiry-interest"
+                    name="unitInterest"
+                    aria-label="Pilih Skema Pembayaran atau Minat Unit"
                     value={formData.unitInterest}
                     onChange={(e) => setFormData({ ...formData, unitInterest: e.target.value })}
                     className="w-full px-3 py-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-primary"
@@ -99,7 +110,11 @@ export default function DeveloperSection() {
                   </select>
 
                   <input
+                    id="inquiry-notes"
+                    name="notes"
                     type="text"
+                    autoComplete="off"
+                    aria-label="Catatan Tambahan"
                     placeholder="Catatan tambahan (opsional)"
                     value={formData.notes}
                     onChange={(e) => setFormData({ ...formData, notes: e.target.value })}

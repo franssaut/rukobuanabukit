@@ -39,6 +39,5 @@ User-agent: *
 Allow: /
 Disallow:
 
-# Host & Sitemap Directives
-Host: https://www.rukobuanaview.web.id
+# Sitemap Directive
 Sitemap: https://www.rukobuanaview.web.id/sitemap.xml

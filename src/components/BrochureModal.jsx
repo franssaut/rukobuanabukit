@@ -23,7 +23,7 @@ export default function BrochureModal({ isOpen, onClose }) {
     // Open WhatsApp to also connect with Frans
     const msg = `Halo Frans, saya ${name} (${phone}). Saya baru saja mengunduh brosur Ruko Buana View dan ingin info lebih detail mengenai promo perdana diskon Rp 30 Juta dan skema Cash Bertahap 60x.`;
     setTimeout(() => {
-      window.open(getWhatsAppUrl(msg), '_blank');
+      window.open(getWhatsAppUrl(msg), '_blank', 'noopener,noreferrer');
       onClose();
       setSubmitted(false);
       setName('');
@@ -65,12 +65,15 @@ export default function BrochureModal({ isOpen, onClose }) {
 
         <form onSubmit={handleDownloadAndSend} className="space-y-3.5 pt-2">
           <div>
-            <label className="block font-label-sm text-on-surface font-semibold mb-1">
+            <label htmlFor="brochure-name" className="block font-label-sm text-on-surface font-semibold mb-1">
               Nama Anda *
             </label>
             <input
+              id="brochure-name"
+              name="name"
               type="text"
               required
+              autoComplete="name"
               placeholder="Contoh: Budi Santoso"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -79,12 +82,15 @@ export default function BrochureModal({ isOpen, onClose }) {
           </div>
 
           <div>
-            <label className="block font-label-sm text-on-surface font-semibold mb-1">
+            <label htmlFor="brochure-phone" className="block font-label-sm text-on-surface font-semibold mb-1">
               Nomor WhatsApp Aktif *
             </label>
             <input
+              id="brochure-phone"
+              name="phone"
               type="tel"
               required
+              autoComplete="tel"
               placeholder="Contoh: 0812 3456 7890"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}

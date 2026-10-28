@@ -43,8 +43,12 @@ export default function LocationSection({ onOpenLightbox }) {
               className="relative rounded-lg overflow-hidden bg-surface-container group cursor-pointer"
             >
               <img
-                src="/assets/location-map.png"
+                src="/assets/location-map.webp"
                 alt="Peta Lokasi dan Aksesibilitas Ruko Buana View Batu Aji"
+                width="1132"
+                height="1600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto object-contain max-h-[520px] mx-auto transition-transform duration-700 group-hover:scale-105"
               />
               

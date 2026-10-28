@@ -174,6 +174,7 @@ export default function FinancingCalculator() {
 
                 <input
                   id={sliderId}
+                  name="price_estimate"
                   type="range"
                   min="650000000"
                   max="1200000000"

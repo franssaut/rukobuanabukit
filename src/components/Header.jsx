@@ -76,8 +76,8 @@ export default function Header({ onOpenBrochure }) {
 
           {/* Limited Unit Urgent Badge */}
           <div className="hidden xl:flex items-center">
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm tracking-wider uppercase animate-pulse font-bold shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm tracking-wider uppercase font-bold shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
               Unit Terbatas
             </span>
           </div>

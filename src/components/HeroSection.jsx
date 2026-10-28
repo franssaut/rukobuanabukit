@@ -15,8 +15,8 @@ export default function HeroSection({ onOpenLightbox }) {
             <span className="material-symbols-outlined text-[16px]">verified</span>
             Official Listing PT. Buana Cipta Propertindo
           </span>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error text-on-error font-label-md text-label-md uppercase tracking-wider shadow-sm animate-pulse cursor-default font-bold">
-            <span className="material-symbols-outlined text-[16px]">hourglass_top</span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error text-on-error font-label-md text-label-md uppercase tracking-wider shadow-sm cursor-default font-bold">
+            <span className="material-symbols-outlined text-[16px] animate-pulse" aria-hidden="true">hourglass_top</span>
             Unit Terbatas
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-highest transition-colors cursor-default">
@@ -121,8 +121,12 @@ export default function HeroSection({ onOpenLightbox }) {
             className="md:col-span-8 relative rounded-xl overflow-hidden shadow-lg bg-surface-container group min-h-[380px] lg:min-h-[460px] cursor-pointer"
           >
             <img
-              src="/assets/hero-facade.png"
+              src="/assets/hero-facade.webp"
               alt="Perspektif Fasad Modern Ruko Buana View Batu Aji Batam"
+              width="1132"
+              height="1600"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
             />
             
@@ -154,8 +158,12 @@ export default function HeroSection({ onOpenLightbox }) {
               className="relative rounded-xl overflow-hidden shadow-md bg-surface-container h-[220px] lg:h-[220px] group cursor-pointer"
             >
               <img
-                src="/assets/brochure-main.png"
+                src="/assets/brochure-main.webp"
                 alt="Ruko Buana View di Kawasan Ramai dengan Target Pasar Keluarga"
+                width="1194"
+                height="1599"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute top-3 right-3 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface p-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
