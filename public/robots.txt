@@ -1,6 +1,44 @@
-# Robots.txt for Ruko Buana View
+# Robots.txt for Ruko Buana View (https://www.rukobuanaview.web.id/)
+# Pemasaran Resmi Ruko Komersial 2 Lantai Batu Aji Batam - Cipta Group
+
+User-agent: Googlebot
+Allow: /
+Disallow:
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow:
+
+User-agent: Bingbot
+Allow: /
+Disallow:
+
+User-agent: Applebot
+Allow: /
+Disallow:
+
+# AI Search Engine & Assistant Crawlers
+User-agent: GPTBot
+Allow: /
+Disallow:
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow:
+
+User-agent: PerplexityBot
+Allow: /
+Disallow:
+
+User-agent: ClaudeBot
+Allow: /
+Disallow:
+
+# All Other Web Crawlers
 User-agent: *
 Allow: /
+Disallow:
 
-# Sitemap
+# Host & Sitemap Directives
+Host: https://www.rukobuanaview.web.id
 Sitemap: https://www.rukobuanaview.web.id/sitemap.xml
